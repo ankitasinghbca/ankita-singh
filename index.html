@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ankita Kumari Singh — Portfolio</title>
+<title>Ankita KumariSingh — Portfolio</title>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -198,13 +198,18 @@ nav {
 }
 
 .avatar {
-  width: 78px; height: 78px; border-radius: 50%;
-  background: linear-gradient(135deg, var(--rose), var(--plum));
-  display: flex; align-items: center; justify-content: center;
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.9rem; color: #fff; font-weight: 600;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  overflow: hidden;
   margin: 0 auto 1.1rem;
   box-shadow: 0 6px 20px rgba(201,92,114,.35);
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .c-name {
@@ -582,7 +587,10 @@ footer {
   </div>
 
   <div class="h-card">
-    <div class="avatar">AS</div>
+    <div class="avatar">
+      <img src="image/profile.jpeg" alt="Ankita">
+    </div>
+
     <div class="c-name">Ankita Kumari Singh</div>
     <div class="c-role">BCA · Data Science & AI</div>
     <div class="c-row">
@@ -833,7 +841,7 @@ footer {
         <div class="e-chips">
           <span class="chip p">Mathematics</span>
           <span class="chip s">Physics</span>
-          <span class="chip r">Computer Science</span>
+          <span class="chip r">Chemistry</span>
         </div>
       </div>
     </div>
