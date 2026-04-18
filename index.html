@@ -515,7 +515,43 @@ footer {
   flex-wrap: wrap;
 }
 
-/* 📱 MOBILE FIX */
+.timeline {
+  position: relative;
+  margin-top: 2rem;
+  padding-left: 20px;
+  border-left: 2px solid var(--bd);
+}
+
+.t-item {
+  position: relative;
+  margin-bottom: 2rem;
+  padding-left: 1.5rem;
+}
+
+.t-dot {
+  position: absolute;
+  left: -9px;
+  top: 5px;
+  width: 14px;
+  height: 14px;
+  background: var(--rose);
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px var(--rose-lt);
+}
+
+.t-content h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: .3rem;
+}
+
+.t-content p {
+  font-size: .85rem;
+  color: var(--ink2);
+  line-height: 1.6;
+}
+
 @media (max-width: 768px) {
 
   .res-box {
@@ -545,6 +581,22 @@ footer {
   .res-actions a {
     width: 100%;              /* 👈 full width buttons */
     text-align: center;
+  }
+
+  .timeline {
+    padding-left: 12px;
+  }
+
+  .t-item {
+    padding-left: 1.2rem;
+  }
+
+  .t-content h3 {
+    font-size: .9rem;
+  }
+
+  .t-content p {
+    font-size: .8rem;
   }
 }
 
@@ -852,6 +904,53 @@ footer {
   </div>
 </section>
 
+<!-- TIME LINE -->
+<section id="timeline">
+  <div class="lbl">// Growth Timeline</div>
+  <h2 class="ttl">My <em>Journey</em></h2>
+
+  <p class="stl">
+    A timeline of my learning journey, skills development, and project experience.
+  </p>
+
+  <div class="timeline">
+
+    <div class="t-item">
+      <div class="t-dot"></div>
+      <div class="t-content">
+        <h3>2024 — Started BCA</h3>
+        <p>Began my journey in Data Science & AI at Babu Banarsi Das University.</p>
+      </div>
+    </div>
+
+    <div class="t-item">
+      <div class="t-dot"></div>
+      <div class="t-content">
+        <h3>2025 — Programming Foundation</h3>
+        <p>Learned Python, SQL, and core programming concepts.</p>
+      </div>
+    </div>
+
+    <div class="t-item">
+      <div class="t-dot"></div>
+      <div class="t-content">
+        <h3>2026 — Data Projects</h3>
+        <p>Worked on data cleaning, visualization, and Power BI dashboards.</p>
+      </div>
+    </div>
+
+    <div class="t-item">
+      <div class="t-dot"></div>
+      <div class="t-content">
+        <h3>Present — Building Portfolio</h3>
+        <p>Creating real-world projects and improving problem-solving skills.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- RESUME -->
 <section id="resume">
   <div class="lbl">// Resume</div>
   <h2 class="ttl">My <em>Resume</em></h2>
